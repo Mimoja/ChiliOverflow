@@ -1,0 +1,27 @@
+{{define "main"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChiliOverflow</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="../static/css/style.css">
+
+</head>
+<body>
+    <div class="top-container" >
+        <div id="beer-list" class="grid-container" >
+            {{range .}}
+            {{template "entry" .}}
+            {{end}}
+        </div>
+        <div class="footer">
+            <div class="footer-column" id="quantity-view"> </div>
+            <div class="footer-column" id="variety-view"> </div>
+            <div class="footer-column" id="clock"> </div>
+        </div>
+    </div>
+</body>
+</html>
+{{end}}

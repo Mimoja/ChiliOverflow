@@ -1,0 +1,16 @@
+{{define "entry"}}
+<div class="grid-item">
+<div id="beer-entry">
+    <div class="wrapper">
+        {{if .Image }}<img class="image" src="/images/{{.Image}}">{{end}}
+        <div class="name"> {{.Name}} </div>
+        <div class="Family"> {{.Family}} </div>
+        <div class="origin"> {{.Origin}} </div>
+        <div class="Family"> {{.Family}} </div>
+        <div class="Heat">Heat:<span class="value"> {{.Heat}}</span> </div>
+        <div class="Color">Color:   <span class="value">{{.Color}} </span></div>
+        <div class="quantity"> QTY:<span class="value">{{.Quantity}} available</span> </div>
+    </div>
+</div>
+</div>
+{{end}}
